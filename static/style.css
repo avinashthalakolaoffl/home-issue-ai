@@ -1,0 +1,173 @@
+/* ===============================
+   GLOBAL STYLES
+   =============================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 0.6s ease-in;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+/* ===============================
+   NAVBAR
+   =============================== */
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============================
+   OFFICIAL APP LOGO (FINAL – LOCKED)
+   =============================== */
+
+.navbar-brand.app-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* FORCE FONT */
+}
+
+.navbar-brand.app-logo i {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.navbar-brand.app-logo .logo-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* FORCE FONT */
+    font-size: 1.45rem;
+    font-weight: 700 !important; /* FORCE BOLDNESS */
+    color: #ffffff;
+    letter-spacing: 0.4px;
+    line-height: 1;
+}
+
+
+/* ===============================
+   CARDS
+   =============================== */
+
+.card {
+    border-radius: 16px;
+    border: none;
+    animation: slideUp 0.5s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ===============================
+   BUTTONS
+   =============================== */
+
+.btn {
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Primary Button */
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+}
+
+/* Success Button */
+.btn-success {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #15803d, #166534);
+}
+
+/* Danger Button */
+.btn-danger {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    border: none;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #b91c1c, #991b1b);
+}
+
+/* ===============================
+   RESULT IMAGE
+   =============================== */
+
+.result-image {
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 6px;
+    background-color: #ffffff;
+}
+
+/* ===============================
+   BADGES & ALERTS
+   =============================== */
+
+.badge {
+    font-size: 1rem;
+    padding: 8px 12px;
+    animation: pulse 1.5s infinite;
+}
+
+.alert {
+    border-radius: 12px;
+    font-size: 0.95rem;
+    padding: 14px;
+}
+
+/* ===============================
+   ANIMATIONS
+   =============================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Issue Detection</title>
+</head>
+<body>
+    <h2>Upload Home Issue Image</h2>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <br><br>
+        <button type="submit">Upload & Analyze</button>
+    </form>
+
+</body>
+</html>
